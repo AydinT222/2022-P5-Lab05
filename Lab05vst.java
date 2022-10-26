@@ -19,7 +19,6 @@ public class Lab05vst extends Applet
         g.drawRect(10,10,width,height);
         g.setColor(Color.BLUE);
         for (int k = 0; k < 50; k++) {
-            //g.drawLine(x1 + k, y1 ,x2, clamp(y2 - k, 650, 100));
             g.drawLine(
                     x1,
                     y1,
