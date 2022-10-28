@@ -88,9 +88,9 @@ public class Lab05vst extends Applet
         iterations = 25;*/
         offsetX = offsetX / 2;
         offsetY = (offsetY / 2) + 1;
-        ref_x1 = 260;
+        ref_x1 = 255;
         ref_y = 495;
-        ref_x2 = 750;
+        ref_x2 = 745;
         x1 = ref_x1;
         y1 = ref_y;
         x2 = ref_x2;
@@ -121,9 +121,10 @@ public class Lab05vst extends Applet
         }
         // flip Y
         ref_y = 155; // 150 (170)
-        y1 = ref_x1;
+
+        y1 = ref_y;
         x2 = ref_x2;
-        y2 = ref_x1;
+        y2 = ref_y;
         for (int k = 0; k < interations; k++) {
             g.drawLine(
                     x1,
@@ -136,7 +137,7 @@ public class Lab05vst extends Applet
         }
         // inverse XY
         x1 = ref_x1;
-        y2 = ref_x1;
+        y2 = ref_y;
         for (int k = 0; k < interations; k++) {
             g.drawLine(
                     x2,
